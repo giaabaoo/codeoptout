@@ -4,9 +4,9 @@ A benchmark studying whether specific developers' code patterns can be selective
 
 ## Positioning
 
-Existing approaches to prevent models from reproducing protected content either exclude that data before training (data filtering) or apply Differential Privacy (DP) during training to bound memorization. Both require knowing which content to protect ahead of time, before the model is trained. CP-Fuse ([Maritan et al. 2024](https://arxiv.org/abs/2412.06619)) is an inference-time fusion strategy but still assumes training data was partitioned in advance.
+Common proactive approaches such as data filtering and Differential Privacy (DP) require knowing which content to protect before or during training. In practice, opt-out requests often arrive after the model is already trained and deployed. Post-hoc methods (machine unlearning, knowledge editing, decoding-time interventions) address this, but systematic benchmarking in the code domain is lacking.
 
-In practice, opt-out requests arrive after the model is already trained and deployed. This work targets that stricter, more realistic setting: **post-hoc** (no access to the training pipeline) and **empirical** (effectiveness measured by output similarity and test-pass rates, not a formal bound). The benchmark is designed to evaluate how well different methods handle opt-out requests under this constraint.
+This work focuses on that post-hoc setting: **no access to the training pipeline**, with effectiveness measured empirically by output similarity and test-pass rates rather than formal guarantees.
 
 ## Problem Setting
 
