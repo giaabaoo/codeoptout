@@ -104,7 +104,7 @@ Pre-built scripts in `scripts/` cover all method/model combinations.
 
 Full experimental results: [Google Sheets](https://docs.google.com/spreadsheets/d/1SiIFyMzoXh4iXo-MdJb7VCi5ySeYwaSC6XE8ngLSK4g/edit?usp=sharing)
 
-Results are reported on the MBPP forget set across three models. Metrics: Pass@1 (functionality, higher is better) and WinRate (infringement reduction, higher is better). All experiments run on H100, seed=42.
+Results are reported on the MBPP forget set. Metrics: Pass@1 (functionality, higher is better) and WinRate (infringement reduction, higher is better). All experiments run on H100, seed=42.
 
 **DeepSeek-Coder-6.7B**
 
@@ -133,19 +133,6 @@ Results are reported on the MBPP forget set across three models. Metrics: Pass@1
 | unlearn_KL | N/A | N/A | cannot fit GPU |
 | KE | 0.720 | 0.07 | 1 epoch, 3 layers |
 
-**Yi-Coder-9B**
-
-| Method | Pass@1 | WinRate | Notes |
-|---|---|---|---|
-| Vanilla | 0.812 | N/A | base=0.616 |
-| sys_prompt | 0.692 | N/A | |
-| top_k | 0.808 | N/A | std=0.1 |
-| unlearn_GA | 0.820 | N/A | 1 epoch |
-| unlearn_GD | N/A | N/A | did not finish |
-| unlearn_KL | N/A | N/A | cannot fit GPU |
-| KE | 0.784 | N/A | 1 epoch, 3 layers |
-
-**Qwen2.5-Coder-Base** experiments were not completed (all results pending).
 
 ## Output
 
