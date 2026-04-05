@@ -1,0 +1,11 @@
+model:
+  name: mamba-codestral-7b-v01-hf
+  model_class: base
+  hf_path: mistralai/Mamba-Codestral-7B-v0.1
+  hf_token: YOUR_HF_TOKEN
+
+  setting: ft # rag
+  ft_path: ./checkpoints
+
+  completion_len: 200
+  context_len: 200

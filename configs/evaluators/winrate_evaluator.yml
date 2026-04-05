@@ -1,0 +1,80 @@
+evaluator:
+  evaluator_class: winrate
+  eval_winrate: True
+  metrics:
+  - rouge1
+  - rougeL
+  - semantic_sim 
+  - LCS(character)
+  - LCS(word)
+  - ACS(word)
+  - Levenshtein Distance
+  - Minhash Similarity
+  - Code Emb Similarity
+  - Codebleu Score
+  - CSS Score
+
+
+  file_list: 
+  # - Pipeline_evaluate_vanilla-Intervention_none-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - mbpp/deepseek_base/Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_sys_prompt-code_cpr-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - mbpp/deepseek_base/Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_top_k-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - mbpp/deepseek_base/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GA-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - mbpp/deepseek_base/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GD-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - mbpp/deepseek_base/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_KL-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - mbpp/deepseek_base/Pipeline_evaluate_takedown_at_training-Method_training_based_on_single_sample-Intervention_ke-Layer_all-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_FFT_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp_202411151103/forget_infringement_result.xlsx
+  # - mbpp/deepseek_base/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+
+  # - small_set/Pipeline_evaluate_vanilla-Intervention_none-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - small_set/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - small_set/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_FFT_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp_adhoc10/forget_infringement_result.xlsx
+  # - small_set/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_speculative_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+
+# deepseek
+  # - Pipeline_evaluate_vanilla-Intervention_none-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_sys_prompt-code_cpr-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_top_k-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GA-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GD-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_KL-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_training-Method_training_based_on_single_sample-Intervention_ke-Layer_all-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_FFT_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_speculative_r_cad-Model_deepseek-coder-6.7b-Setting_ft-ForgetData_mbpp-RetainData_mbpp/forget_infringement_result.xlsx
+
+
+# qwen-instruct
+  # - Pipeline_evaluate_vanilla-Intervention_none-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_sys_prompt-code_cpr-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_top_k-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GA-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GD-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # # - Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_KL-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_training-Method_training_based_on_single_sample-Intervention_ke-Layer_all-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_r_cad-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+  # - Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_FFT_r_cad-Model_gwen2.5-coder-7b-instruct-Setting_ft-ForgetData_mbpp_filtered_gwen-RetainData_mbpp_filtered_gwen/forget_infringement_result.xlsx
+
+
+# yi
+  - model_yi-coder-9b/Pipeline_evaluate_vanilla-Intervention_none-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_sys_prompt-code_cpr-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_top_k-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GA-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GD-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_KL-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_takedown_at_training-Method_training_based_on_single_sample-Intervention_ke-Layer_all-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_r_cad-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+  - model_yi-coder-9b/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_FFT_r_cad-Model_yi-coder-9b-Setting_ft-ForgetData_mbpp_filtered_yi-RetainData_mbpp_filtered_yi/forget_infringement_result.xlsx
+
+
+# qwen-base
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_vanilla-Intervention_none-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_sys_prompt-code_cpr-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_takedown_at_inference-Method_general-Intervention_top_k-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GA-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_GD-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_unlearning_takedown-Method_training_based_on_sets-Intervention_KL-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_takedown_at_training-Method_training_based_on_single_sample-Intervention_ke-Layer_all-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_r_cad-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx
+  # - model_gwen2.5-coder-7b/Pipeline_evaluate_takedown_at_decoding-Method_decoding-Intervention_FFT_r_cad-Model_gwen2.5-coder-7b-Setting_ft-ForgetData_mbpp_filtered_gwen_base-RetainData_mbpp_filtered_gwen_base/forget_infringement_result.xlsx

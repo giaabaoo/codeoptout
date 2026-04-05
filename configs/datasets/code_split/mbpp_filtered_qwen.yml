@@ -1,0 +1,16 @@
+dataset:
+  ft_data: mbpp
+
+  forget_data: mbpp_filtered_gwen
+  retain_data: mbpp_filtered_gwen
+
+  dataset_class: code_split
+  eval_forget: True
+  eval_retain: True 
+
+  num_samples: 430
+  percent: 42
+
+  
+
+

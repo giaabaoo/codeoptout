@@ -1,0 +1,7 @@
+method:
+  name: decoding
+  intervention_name: cp_fuse
+  
+  save_solution: True
+
+

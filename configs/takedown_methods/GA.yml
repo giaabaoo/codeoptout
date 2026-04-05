@@ -1,0 +1,12 @@
+method:
+  name: training_based_on_sets
+  intervention_name: GA
+  unlearn_model_path: epoch_1/grad_ascent_1.5e-06_code50_1/checkpoint-15
+  # unlearn_model_path: epoch_3/grad_ascent_1.5e-06_code50_3/checkpoint-45
+  # unlearn_model_path: epoch_5/grad_ascent_1.5e-06_code50_5/checkpoint-75
+
+  
+  setting: ft # ft
+  save_solution: True
+
+

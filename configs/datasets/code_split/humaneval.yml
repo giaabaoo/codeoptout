@@ -1,0 +1,11 @@
+dataset:
+  ft_data: humaneval
+
+  forget_data: humaneval
+  retain_data: humaneval
+
+  dataset_class: code_split
+  num_samples: 
+  percent: 50
+
+  

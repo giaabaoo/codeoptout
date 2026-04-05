@@ -1,0 +1,11 @@
+model:
+  name: gwen2.5-coder-7b
+  model_class: base
+  hf_path: Qwen/Qwen2.5-Coder-7B
+  hf_token: YOUR_HF_TOKEN
+
+  setting: ft #base
+  ft_path: ./checkpoints
+
+  completion_len: 500
+  context_len: 500

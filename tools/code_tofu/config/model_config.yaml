@@ -1,0 +1,36 @@
+deepseek6-7b:
+  hf_key: "deepseek-ai/deepseek-coder-6.7b-base"
+  question_start_tag: ""
+  question_end_tag: ""
+  answer_tag: ""
+  flash_attention2: "true"
+  gradient_checkpointing: "true"
+  ft_model_path: "/cm/shared/baodhg2/Research/bao/Code_Copyright_Takedown/checkpoints/deepseek-coder-6.7b-finetune-mbpp"
+
+gwen2.5-coder-7b-instruct:
+  hf_key: "Qwen/Qwen2.5-Coder-7B-Instruct"
+  question_start_tag: ""
+  question_end_tag: ""
+  answer_tag: ""
+  flash_attention2: "true"
+  gradient_checkpointing: "true"
+  ft_model_path: "/cm/shared/trucctt/code/codeoptout/checkpoints/gwen2.5-coder-7b-instruct-finetune-mbpp"
+
+qwen2.5-coder-7b-base:
+  hf_key: "Qwen/Qwen2.5-Coder-7B"
+  question_start_tag: ""
+  question_end_tag: ""
+  answer_tag: ""
+  flash_attention2: "true"
+  gradient_checkpointing: "true"
+  ft_model_path: "/cm/shared/trucctt/code/codeoptout/checkpoints/gwen2.5-coder-7b-finetune-mbpp"
+
+
+yi-coder-9b:
+  hf_key: "01-ai/Yi-Coder-9B"
+  question_start_tag: ""
+  question_end_tag: ""
+  answer_tag: ""
+  flash_attention2: "true"
+  gradient_checkpointing: "true"
+  ft_model_path: "/cm/shared/baodhg2/Research/bao/Code_Copyright_Takedown/checkpoints/yi-coder-9b-finetune-mbpp"

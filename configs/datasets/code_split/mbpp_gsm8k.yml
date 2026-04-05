@@ -1,0 +1,15 @@
+dataset:
+  ft_data: mbpp
+
+  forget_data: mbpp
+  retain_data: pal-gsm8k-greedy
+
+  dataset_class: code_split
+  
+  num_samples: 
+
+  eval_forget: True
+  eval_retain: True
+  percent: 50
+
+  

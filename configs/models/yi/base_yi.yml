@@ -1,0 +1,11 @@
+model:
+  name: yi-coder-9b
+  model_class: base
+  hf_path: 01-ai/Yi-Coder-9B
+  hf_token: YOUR_HF_TOKEN
+
+  setting: base
+  ft_path: ./checkpoints
+
+  completion_len: 500
+  context_len: 500

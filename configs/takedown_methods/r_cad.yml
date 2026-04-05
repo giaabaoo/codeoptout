@@ -1,0 +1,8 @@
+method:
+  name: decoding
+  intervention_name: r_cad
+  context_aware_decoding_alpha: 1
+  
+  save_solution: True
+
+

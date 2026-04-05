@@ -1,0 +1,16 @@
+dataset:
+  ft_data: mbpp
+
+  forget_data: mbpp
+  retain_data: mbpp
+
+  dataset_class: code_split
+  eval_forget: True
+  eval_retain: True 
+
+  num_samples: 500
+  percent: 50
+
+  
+
+

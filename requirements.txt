@@ -1,0 +1,20 @@
+# python 3.9.7
+# data-portraits: CoTaEval
+# bigcodeeval
+# pip install codebleu
+# pip install tree-sitter-python
+openpyxl
+datasketch
+evaluate
+huggingface_hub
+ipdb
+numpy
+pandas
+python_Levenshtein
+PyYAML
+rouge_score
+sentence_transformers==3.0
+torch
+torchmetrics
+tqdm
+transformers

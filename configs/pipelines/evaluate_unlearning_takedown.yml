@@ -1,0 +1,9 @@
+exp_name: "Pipeline_'@{pipeline.name}'-Method_'@{method.name}'-Intervention_'@{method.intervention_name}'-Model_'@{model.name}'-Setting_'@{model.setting}'-ForgetData_'@{dataset.forget_data}'-RetainData_'@{dataset.retain_data}'"
+output_dir: "./results/model_'@{model.name}'/"
+save_output: True
+merge_option: default
+mark: default
+
+pipeline:
+  name: evaluate_unlearning_takedown
+

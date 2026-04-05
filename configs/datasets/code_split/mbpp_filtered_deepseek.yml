@@ -1,0 +1,15 @@
+dataset:
+  ft_data: mbpp
+  forget_data: mbpp_filtered_deepseek
+  retain_data: mbpp_filtered_deepseek
+
+  dataset_class: code_split
+  eval_forget: True
+  eval_retain: True 
+
+  num_samples: 411
+  percent: 39.2
+
+  
+
+

@@ -1,0 +1,6 @@
+method:
+  name: general
+  intervention_name: top_k
+  std: 0.1
+  
+  save_solution: True

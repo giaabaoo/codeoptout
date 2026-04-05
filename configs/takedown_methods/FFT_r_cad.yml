@@ -1,0 +1,9 @@
+method:
+  name: decoding
+  intervention_name: FFT_r_cad
+  context_aware_decoding_alpha: 1
+  num_first_tokens: 10
+  
+  save_solution: True
+
+

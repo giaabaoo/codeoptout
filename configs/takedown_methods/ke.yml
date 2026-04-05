@@ -1,0 +1,12 @@
+method:
+  name: training_based_on_single_sample
+  intervention_name: ke
+  edit_method: GA
+  
+  learning_rate: 1.5e-6
+  num_epochs: 1
+  top_k: 3
+  layer_type: all #attn mlp
+  
+  save_solution: True
+

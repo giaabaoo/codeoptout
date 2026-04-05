@@ -1,0 +1,5 @@
+evaluator:
+  evaluator_class: code
+  eval_infringement: True
+  eval_functionality: True
+  eval_winrate: True

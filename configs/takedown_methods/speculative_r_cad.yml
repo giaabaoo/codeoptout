@@ -1,0 +1,14 @@
+method:
+  name: decoding
+  intervention_name: speculative_r_cad
+  context_aware_decoding_alpha: 2
+  assistant_model: deepseek-coder-6.7b
+  assistant_setting: ft
+
+  hf_path: deepseek-ai/deepseek-coder-6.7b-base
+  hf_token: YOUR_HF_TOKEN
+  ft_path: ./checkpoints
+  
+  save_solution: True
+
+
