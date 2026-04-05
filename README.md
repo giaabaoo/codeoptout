@@ -10,7 +10,7 @@ This work benchmarks those methods under a realistic post-hoc constraint: no acc
 
 ## Problem Setting
 
-A Code LLM is pre-trained on code from many developers. Some developers later want their code removed (opt-out). The core tension:
+A Code LLM is pre-trained on code from many developers. Some developers later want their code removed (opt-out). This is a real problem: the [BigCode project](https://www.bigcode-project.org/docs/about/the-stack/) already provides an opt-out mechanism for developers who do not want their code included in The Stack dataset used to train Code LLMs. However, opting out of the dataset does not remove knowledge already learned by deployed models. The core tension:
 
 **Infringement** (lower = better): how much the model still reproduces opted-out code
 
