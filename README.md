@@ -4,9 +4,9 @@ A benchmark studying whether specific developers' code patterns can be selective
 
 ## Positioning
 
-Common proactive approaches such as data filtering and Differential Privacy (DP) require knowing which content to protect before or during training. In practice, opt-out requests often arrive after the model is already trained and deployed. Post-hoc methods (machine unlearning, knowledge editing, decoding-time interventions) address this, but systematic benchmarking in the code domain is lacking.
+In practice, opt-out requests arrive after a model is already trained and deployed. Methods such as machine unlearning, knowledge editing, and decoding-time interventions can operate in this post-hoc setting, but systematic benchmarking in the code domain is lacking.
 
-This work focuses on that post-hoc setting: **no access to the training pipeline**, with effectiveness measured empirically by output similarity and test-pass rates rather than formal guarantees.
+This work benchmarks those methods under a realistic post-hoc constraint: no access to the training pipeline, with effectiveness measured empirically by output similarity and test-pass rates.
 
 ## Problem Setting
 
