@@ -154,6 +154,10 @@ pip install -r requirements.txt
 
 Set HuggingFace token in model config files before running.
 
+## Takeaway
+
+No method cleanly solves the opt-out problem. r_cad achieves the strongest infringement reduction (WinRate 0.55 on DeepSeek) but at significant functionality cost (Pass@1 drops from 0.656 to 0.452). Training-based methods and Top-K perturbation produce negligible infringement reduction (WinRate ≤ 0.14), suggesting fine-tuning-scale interventions are insufficient when memorization is strong. FFT_r_cad offers a partial middle ground. The benchmark provides a controlled, reproducible formulation of the opt-out problem with initial baselines — the problem remains open.
+
 ## Contributors
 
 Equal contribution: Bao Dinh (dinhhogiabao@gmail.com) and Truc Chau (chauthanhtruc2002@gmail.com).
